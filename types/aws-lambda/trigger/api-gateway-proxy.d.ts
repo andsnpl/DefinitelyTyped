@@ -108,8 +108,8 @@ export interface APIGatewayProxyEventStageVariables {
 
 export interface APIGatewayProxyEventBase<TAuthorizerContext> {
     body: string | null;
-    headers: APIGatewayProxyEventHeaders;
-    multiValueHeaders: APIGatewayProxyEventMultiValueHeaders;
+    headers: APIGatewayProxyEventHeaders | null;
+    multiValueHeaders: APIGatewayProxyEventMultiValueHeaders | null;
     httpMethod: string;
     isBase64Encoded: boolean;
     path: string;
